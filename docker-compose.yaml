@@ -25,7 +25,7 @@ services:
       TZ: Asia/Shanghai
       WAIT_HOSTS: mysql:3306
     volumes:
-      - ./server/config.yml:/mayfly/config.yml
+      - ./server/config.yml:/mayfly-go/config.yml
     depends_on:
       - mysql
     restart: always
